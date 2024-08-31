@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Diabetes Prediction</title>
+</head>
+<body class="main">
+    <div class="bg-img">
+        <div class="bg-txt">
+        <h1>Welcome to Diabetes Risk Prediction</h1>
+        <span>Know your risk and live a healthy life</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <br>
+        <h3>What is Diabetes?</h3>
+        <span>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. 
+            The hormone insulin made by the pancreas helps glucose get into the  cells to be used for energy.
+In the case of diabetes, the body doesnot make enough—or any—insulin, or doesnot use insulin properly, glucose then stays in the blood and doesnot reach the cells
+This raises the risk for damage to the eyes, kidneys, nerves, and heart.
+        </span>
+        <br>
+        <span>
+            Diabetes is a chronic diseases, and is present worldwide. A major reason of deaths in adults across the globe includes this chronic condition. Chronic conditions 
+            are also cost associated. A major portion of budget is spent on chronic diseases by governments and individuals 
+        </span>
+        <br>
+        <br>
+        <h3>Types of Diabetes</h3>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="{{ url_for('static', filename='images/type1.jpg') }}" class="card-img-top h-100" alt="Card Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Type 1 Diabetes</h5>
+                      <p class="card-text">It is characterized by deficient insulin production, your body makes little or no insulin.
+                        It is usually diagnosed in children and young adults. People with type 1 diabetes 
+                        requires daily administration of insulin to stay alive. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="{{ url_for('static', filename='images/type22.jpg') }}" class="card-img-top h-100" alt="Card Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Type 2 Diabetes</h5>
+                      <p class="card-text">In this case, your body doesn’t use insulin properly and can’t keep blood sugar at normal levels.
+                        You can help delay or prevent type 2 diabetes by knowing the risk factors and taking steps toward a healthier lifestyle.
+                      </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="{{ url_for('static', filename='images/gest.jpg') }}" class="card-img-top h-100" alt="Card Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Gestational Diabetes</h5>
+                      <p class="card-text">It develops during pregnancy and usually disappears after giving birth.
+                        Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery.
+                        it increases your risk for type 2 diabetes later in life. 
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Risk factors of Diabetes</h3>
+        <p>Knowing your risk for diabetes will keep you one step ahead of developing complications. You’ll be able to make necessary lifestyle changes to
+             protect yourself from the most serious health effects of the disease.  </p>
+             <ul>
+                <li>A Body Mass Index value greater than 25</li>
+                <li>Having an inactive or sedentary lifestyle</li>
+                <li>Are over age 45 </li>
+                <li>Have an immediate family member with type 2 diabetes</li>
+                <li>Have a lot of belly fat</li>
+             </ul>
+  
+        <div class="alert alert-primary" role="alert">
+            Early detection of diabets risk factors is very crucial to prevent diabetes related complications such as heart disease, kidney failure, eye damage.
+          </div>
+       
+        <span>Click the button below to know your risk of diabetes.</span>
+        <br>
+        <a href="/predict" class="btn btn-primary blinking-button">Predict Diabetes</a>
+        <!-- <img src="{{ url_for('static', filename='images/diabetes.jpg') }}" alt="background Image">-->  
+    
+        <br>
+        <br>
+        <h1>Did you know?</h1>
+        <ul>
+            <li>Type 2 diabetes accounts for approximately 90% to 95% of all diagnosed cases of diabetes; type 1 diabetes accounts for approximately 5-10% </li>
+            <li>80% of people living with diabetes are currently undiagnosed, due to lack of awareness and understanding about diabetes risk factors and prevention methods</li>
+            <li>Early detection of these risk factors is vital in helping patients reverse diabetes from the early stage to live healthy lives</li>
+        </ul>
+        <br>
+    </div>
+    <br>
+<div class="foot">
+    <p class='text-center'>Diabetes Risk prediction @2024</p>
+</div>
+</body>
+</html>

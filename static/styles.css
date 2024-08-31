@@ -1,0 +1,55 @@
+/* predict.html styles start */
+.body {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../static/images/type222.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+/* predict.html styles end */
+
+
+
+/* index.html styles start */
+
+.bg-img {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../static/images/diabetes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 60vh;
+    text-align: center;
+}
+
+.bg-txt{
+    padding-top: 30vh;
+}
+
+.blinking-button {
+    animation: blinkAnimation 1s infinite;
+  }
+
+  @keyframes blinkAnimation {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .foot{
+    background-color: gainsboro;
+    padding: 1rem;
+  }
+/* index.html styles end */
